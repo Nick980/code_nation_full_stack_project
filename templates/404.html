@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content%}
+
+<!--Error 404 handling page-->
+
+<body>
+    <h1>Error 404</h1>
+    <!--"e" passes error function to display in browser for general information and troubleshooting-->
+    <p>{{ e }}</p>
+    <!--button to return user to index.html-->
+    <button class="raceButton glow-button" onclick= "location.href='/'" class="example-button">Return to Main Page</button>
+</body>
+{% endblock content%}

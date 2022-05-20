@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block content%}
+<body>
+    <div>
+        <img class="logo" src="{{url_for('static',filename = 'images/WoWlogo.webp')}}" title="World of Warcraft">
+        <h2 >Massively Multiplayer Onbrne Role-Playing Game</h2>
+        <h2>Join the world of Azeroth and adventure with your friends</h2>
+    </div>
+    <div>
+        <h2>Explore the world, complete quests and epic stories, help save the world of Azeroth</h2>
+            <div class="text-center">
+                <img class="img-fluid" src="static\images\mainpage\solo.jpg" alt="...">
+            </div>
+        <h2>Where will your adventure take you?</h2>
+    </div>
+    <div>
+        <h2>Dive into dunegons and defeat the evil within</h2>
+            <div class="text-center">
+                <img class="img-fluid" src="static\images\mainpage\dungeon.webp" alt="...">
+            </div>
+        <p> Dunegons are 5 man instanced areas with more challenging enemies and bosses for you to beat. The harder the challenge the bigger the reward!</p>
+        <p>There are three primary roles in almost every MMORPG, and World of Warcraft is no exception. <br>
+                <br><img class="logo-race" src="{{url_for('static',filename = 'images/tank.webp')}}" alt="">Tank - Tanks protect their albres by drawing enemies' attacks toward themselves and absorbing damage.<br>
+                <br><img class="logo-race" src="{{url_for('static',filename = 'images/healer.webp')}}" alt="">Healer - Healers keep their albres abrve by heabrng their wounds and protecting them from harm.<br>
+                <br><img class="logo-race" src="{{url_for('static',filename = 'images/dps.webp')}}" alt="">Damage  - Dealer (DPS) - Damage dealers focus on the critical task of deabrng damage to the party's foes.<br>
+        </p>
+    </div>
+    <div>
+        <h2>Got more than 5 friends? Team up and enter one of the many Raids in Warcraft!</h2>
+            <div class="text-center">
+                <img class="img-fluid" src="static\images\mainpage\raid.jpg" alt="...">
+            </div>
+        <p>Raid content is made for groups 10 to 25 in size. You'll need a variety of players playing different roles and all your skill to survive!.</p>
+    </div>
+
+</body>
+{% endblock content%}

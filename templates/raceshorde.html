@@ -1,0 +1,188 @@
+{% extends 'base.html' %}
+
+{% block content%}
+<body class="horde">
+    <img class="logo-faction" src="{{url_for('static',filename = 'images/horde logo.png')}}" alt="Horde Logo">
+    <h1>Horde: Races</h1>
+<div>
+    <div class="accordion" id="accordionExpansions">
+        <!--Orc-->
+        <div class="accordion-item">
+            <h3 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOrc" aria-expanded="false" aria-controls="collapseOrc">
+                <img class="logo-race" src="{{url_for('static',filename = 'images/orc.png')}}" alt="World of Warcraft">
+                <h3>Orc</h3>
+            </button>
+            </h3>
+            <div id="collapseOrc" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExpansions">
+            <div class="accordion-body">
+                <p class="horde">The orc race originated on the planet Draenor. A peaceful people with shamanic beliefs, they were enslaved by the Burning Legion and forced into war with the humans of Azeroth. Although it took many years, the orcs finally escaped the demons' corruption and won their freedom. To this day they fight for honor in an alien world that hates and reviles them.</p>
+            </div>
+            </div>
+        </div>
+    <!--Undead Forsaken-->
+    <div class="accordion-item">
+        <h3 class="accordion-header" id="headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseUndead" aria-expanded="false" aria-controls="collapseUndead">
+            <img class="logo-race" src="{{url_for('static',filename = 'images/undead.png')}}" alt="World of Warcraft">
+            <h3>Undead Forsaken</h3>
+        </button>
+        </h3>
+        <div id="collapseUndead" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExpansions">
+        <div class="accordion-body">
+            <p>Free of the Lich King's grasp, the Forsaken seek to overthrow his rule. Led by the banshee queen Sylvanas, they hunger for vengeance against the Scourge. Humans, too, have become the enemy, relentless in their drive to purge all undead from the land. The Forsaken care little for their allies: to them the Horde is merely a tool that may further their dark scheme.</p>
+        </div>
+        </div>
+    </div>
+    <!--Tauren-->
+    <div class="accordion-item">
+        <h3 class="accordion-header" id="headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTauren" aria-expanded="false" aria-controls="collapseTauren">
+            <img class="logo-race" src="{{url_for('static',filename = 'images/tauren.png')}}" alt="World of Warcraft">
+            <h3>Tauren</h3>
+        </button>
+        </h3>
+        <div id="collapseTauren" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExpansions">
+        <div class="accordion-body">
+            <p>>Always the tauren strive to preserve the balance of nature and heed the will of their goddess, the Earth Mother. Recently attacked by murderous centaur, the tauren would have been wiped out, save for a chance encounter with the orcs, who helped defeat the interlopers. To honor this blood-debt, the tauren joined the Horde, solidifying the two races' friendship.</p>
+        </div>
+        </div>
+    </div>
+    <!--Troll-->
+    <div class="accordion-item">
+        <h3 class="accordion-header" id="headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTroll" aria-expanded="false" aria-controls="collapseTroll">
+            <img class="logo-race" src="{{url_for('static',filename = 'images/troll.png')}}" alt="World of Warcraft">
+            <h3>Troll</h3>
+        </button>
+        </h3>
+        <div id="collapseTroll" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExpansions">
+        <div class="accordion-body">
+            <p>Once at home in the jungles of Stranglethorn Vale, the fierce trolls of the Darkspear tribe were pushed out by warring factions. Eventually the trolls befriended the orcish Horde, and Thrall, the orcs' young warchief, convinced the trolls to travel with him to Kalimdor. Though they cling to their shadowy heritage, the Darkspear trolls hold a place of honor in the Horde.</p>
+        </div>
+        </div>
+    </div>
+    <!--Blood Elf-->
+    <div class="accordion-item">
+        <h3 class="accordion-header" id="headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBelf" aria-expanded="false" aria-controls="collapseBelf">
+            <img class="logo-race" src="{{url_for('static',filename = 'images/blood elf.png')}}" alt="World of Warcraft">
+            <h3>Blood Elf</h3>
+        </button>
+        </h3>
+        <div id="collapseBelf" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExpansions">
+        <div class="accordion-body">
+            <p>Long ago the majestic high elves created the splendid golden city of Quel'Thalas, built around a magical fount of energy known as the Sunwell. When the Lich King destroyed their capital in the Third War, the survivors turned to the Horde for help.
+            <br><br>
+            Now known as the blood elves, these refugees are all that remains of their glorious civilization. They strive to rebuild Quel'Thalas while struggling against a crippling addiction to the very magical energies that once built their empire.
+            </p>
+        </div>
+        </div>
+    </div>
+    <!--Goblin-->
+    <div class="accordion-item">
+        <h3 class="accordion-header" id="headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGoblin" aria-expanded="false" aria-controls="collapseGoblin">
+            <img class="logo-race" src="{{url_for('static',filename = 'images/goblin.png')}}" alt="World of Warcraft">
+            <h3>Goblin</h3>
+        </button>
+        </h3>
+        <div id="collapseGoblin" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExpansions">
+        <div class="accordion-body">
+            <p>Originally the slaves of jungle trolls on the Isle of Kezan, the goblin race was forced to mine Kaja'mite ore out of the Undermine, deep in the bowels of Mount Kajaro.
+            <br><br>
+            Unbeknownst to anyone at the time, the mineral had magical properties that caused the goblins to rapidly increase in both cunning and intelligence.
+            <br><br>
+            Tinkering their own powerful artifacts of engineering and alchemy in secret, the goblins overthrew their troll oppressors, taking over the island that they now call home. Quickly rising to prominence as masters of mercantilism, goblins and their global trade conglomerates dominate all commerce across Azeroth.</p>
+        </div>
+        </div>
+    </div>
+    <!--Nightborne-->
+    <div class="accordion-item">
+        <h3 class="accordion-header" id="headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNightborne" aria-expanded="false" aria-controls="collapseNightborne">
+            <img class="logo-race" src="{{url_for('static',filename = 'images/nightborne.png')}}" alt="World of Warcraft">
+            <h3>Nightborne</h3>
+        </button>
+        </h3>
+        <div id="collapseNightborne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExpansions">
+        <div class="accordion-body">
+            <p>Isolated behind a protective barrier for 10,000 years, the elves of Suramar grew increasingly dependent upon the arcane magic of the Nightwell. To protect this font of power, the leaders of the Nightborne struck a bargain with the Burning Legion that plunged their kingdom into civil war. After fighting for freedom from their demonic masters, the Nightborne seek allies in the Horde to help them reclaim their place in the world.</p>
+        </div>
+        </div>
+    </div>
+    <!--Highmountain Tauren-->
+    <div class="accordion-item">
+        <h3 class="accordion-header" id="headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHighmountain" aria-expanded="false" aria-controls="collapseHighmountain">
+            <img class="logo-race" src="{{url_for('static',filename = 'images/highmountain tauren.png')}}" alt="World of Warcraft">
+            <h3>Highmountain Tauren</h3>
+        </button>
+        </h3>
+        <div id="collapseHighmountain" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExpansions">
+        <div class="accordion-body">
+            <p>Descended from Huln, brave hero of the War of the Ancients, the Highmountain tauren honor the spirits of earth, river, and sky. Though the Legion invaded their lands and sowed seeds of distrust between them, the tribes of Highmountain stand united once more. At long last they are ready to venture beyond their sacred mountain and stand beside their kin from Kalimdor, lending their nobility and strength to the mighty Horde.</p>
+        </div>
+        </div>
+    </div>
+    <!--Mag'har Orc-->
+    <div class="accordion-item">
+        <h3 class="accordion-header" id="headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMaghar" aria-expanded="false" aria-controls="collapseMaghar">
+            <img class="logo-race" src="{{url_for('static',filename = 'images/maghar orc.png')}}" alt="World of Warcraft">
+            <h3>Mag'har Orc</h3>
+        </button>
+        </h3>
+        <div id="collapseMaghar" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExpansions">
+        <div class="accordion-body">
+            <p>For untold generations, the orc clans of Draenor battled one another in endless war. But when Gul'dan offered them the blood of his demonic masters, the disparate tribes of Mag'har—the orcish word for "uncorrupted"—refused the dark bargain and banded together to drive out the Burning Legion. United under the leadership of Grommash Hellscream, the Mag'har pledged to one day repay Azeroth's heroes for aiding their cause. As war against the Alliance intensifies, the Horde must call upon the might of the Mag'har to seize victory.</p>
+        </div>
+        </div>
+    </div>
+    <!--Zandalari Troll-->
+    <div class="accordion-item">
+        <h3 class="accordion-header" id="headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseZandalari" aria-expanded="false" aria-controls="collapseZandalari">
+            <img class="logo-race" src="{{url_for('static',filename = 'images/zandalari troll.png')}}" alt="World of Warcraft">
+            <h3>Zandalari Troll</h3>
+        </button>
+        </h3>
+        <div id="collapseZandalari" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExpansions">
+        <div class="accordion-body">
+            <p>Descended from the first troll tribes, the Zandalari are an ancient kingdom steeped in ritual and superstition. Their warriors ride mighty dinosaurs into battle, and they possess one of the most formidable fleets in the known world. But as enemies encroach upon the borders of Zuldazar, unrest within the king's council threatens to topple the empire. If the heroes of the Horde can return stability to Zandalar, they would gain a powerful new ally.</p>
+        </div>
+        </div>
+    </div>
+    <!--Vulpera-->
+    <div class="accordion-item">
+        <h3 class="accordion-header" id="headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseVulpera" aria-expanded="false" aria-controls="collapseVulpera">
+            <img class="logo-race" src="{{url_for('static',filename = 'images/vulpera.png')}}" alt="World of Warcraft">
+            <h3>Vulpera</h3>
+        </button>
+        </h3>
+        <div id="collapseVulpera" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExpansions">
+        <div class="accordion-body">
+            <p>Clever and resourceful, the vulpera of Vol’dun have survived amidst the sands for generations. Eager to join the ranks of the Horde, their caravans have departed from the dunes in search of adventure.
+            <br><br>
+            The serpentine sethrak have taken to subjugating anyone they can as slaves, and the vulpera are an easy target for their machinations. If you’ve taken steps to liberate the vulpera from these overseers, they’ll join the Horde on the battlefield.</p>
+        </div>
+        </div>
+    </div>
+    <!--Pandaren-->
+    <div class="accordion-item">
+        <h3 class="accordion-header" id="headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePandaren" aria-expanded="false" aria-controls="collapsePandaren">
+            <img class="logo-race" src="{{url_for('static',filename = 'images/pandaren.png')}}" alt="World of Warcraft">
+            <h3>Pandaren</h3>
+        </button>
+        </h3>
+        <div id="collapsePandaren" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExpansions">
+        <div class="accordion-body">
+            <p>Shrouded in fog for ages, the ancient realm of Pandaria has remained unspoiled by war. Now that it has been rediscovered, Pandaren heroes are stepping forward to declare their allegiance toward either the Alliance or the Horde. The most adventurous of the Pandaren come from the Wandering Island, a mysterious land cut off from the rest of Azeroth and Pandaria itself.</p>
+        </div>
+        </div>
+    </div>
+</div>
+</body>
+{% endblock content%}

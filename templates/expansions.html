@@ -1,0 +1,164 @@
+{% extends 'base.html' %}
+
+{% block content%}
+
+<!--Page to show the games various launch and expansion trailers. I am using Bootstrap accordion to expand and collapse to reveal content-->
+<!--Future improvements to be made include autoplay and autopause on opening/closing the accordion card-->
+
+<body>
+    <h1>Expansion Trailers</h1>
+    <div class="accordion" id="accordionExpansions">
+        <!--Vanillia-->
+        <div class="accordion-item">
+            <h3 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWoW" aria-expanded="false" aria-controls="collapseWoW">
+                    <!--logo for each expansion used as header for each card-->
+                    <img class="logo" src="{{url_for('static',filename = 'images/WoWlogo.webp')}}" alt="World of Warcraft">
+                </button>
+            </h3>
+            <div id="collapseWoW" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExpansions">
+                <div class="accordion-body">
+                    <div class="vidcontainer"> <!--div added for "vidcontainer" and "responsive-iframe" classes to ensure video scales with browser size-->
+                        <iframe class="responsive-iframe" src="https://www.youtube.com/embed/vlVSJ0AvZe0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Burning Crusade-->
+        <div class="accordion-item">
+            <h3 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTBC" aria-expanded="false" aria-controls="collapseTBC">
+                    <img class="logo" src="{{url_for('static',filename = 'images/TBCLogo.webp')}}" alt="World of Warcraft: The Burning Crusade">
+                </button>
+            </h3>
+            <div id="collapseTBC" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExpansions">
+                <div class="accordion-body">
+                    <div class="vidcontainer">
+                        <iframe src="https://www.youtube.com/embed/IBHL_-biMrQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Wrath of the Lich King-->
+        <div class="accordion-item">
+            <h3 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWotLK" aria-expanded="false" aria-controls="collapseWotLK">
+                    <img class="logo" src="{{url_for('static',filename = 'images/WrathLogo.webp')}}" alt="World of Warcraft: Wrath of the Lich King">
+                </button>
+            </h3>
+            <div id="collapseWotLK" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExpansions">
+                <div class="accordion-body">
+                    <div class="vidcontainer">
+                        <iframe src="https://www.youtube.com/embed/BCr7y4SLhck" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Cataclysm-->
+        <div class="accordion-item">
+            <h3 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCata" aria-expanded="false" aria-controls="collapseCata">
+                    <img class="logo" src="{{url_for('static',filename = 'images/Cataclysmlogo.webp')}}" alt="World of Warcraft: Cataclysm">
+                </button>
+            </h3>
+            <div id="collapseCata" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExpansions">
+                <div class="accordion-body">
+                    <div class="vidcontainer">
+                        <iframe src="https://www.youtube.com/embed/Wq4Y7ztznKc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Mists of Pandaria-->
+        <div class="accordion-item">
+            <h3 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMoP" aria-expanded="false" aria-controls="collapseMoP">
+                    <img class="logo" src="{{url_for('static',filename = 'images/MoPlogo.webp')}}" alt="World of Warcraft: Mists of Pandaria">
+                </button>
+            </h3>
+            <div id="collapseMoP" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExpansions">
+                <div class="accordion-body">
+                    <div class="vidcontainer">
+                        <iframe src="https://www.youtube.com/embed/wvYXoyxLv64" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Warlords of Draenor-->
+        <div class="accordion-item">
+            <h3 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWOD" aria-expanded="false" aria-controls="collapseWOD">
+                    <img class="logo" src="{{url_for('static',filename = 'images/WoDLogo.webp')}}" alt="World of Warcraft: Warlords of Draenor">
+                </button>
+            </h3>
+            <div id="collapseWOD" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExpansions">
+                <div class="accordion-body">
+                    <div class="vidcontainer">
+                        <iframe src="https://www.youtube.com/embed/TLzhlsEFcVQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Legion-->
+        <div class="accordion-item">
+            <h3 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLegion" aria-expanded="false" aria-controls="collapseLegion">
+                    <img class="logo" src="{{url_for('static',filename = 'images/Legionlogo.webp')}}" alt="World of Warcraft: Legion">
+                </button>
+            </h3>
+            <div id="collapseLegion" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExpansions">
+                <div class="accordion-body">
+                    <div class="vidcontainer">
+                        <iframe src="https://www.youtube.com/embed/eYNCCu0y-Is" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Battle for Azeroth-->
+        <div class="accordion-item">
+            <h3 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBFA" aria-expanded="false" aria-controls="collapseBFA">
+                    <img class="logo" src="{{url_for('static',filename = 'images/Battle_for_Azeroth_logo.webp')}}" alt="World of Warcraft: Battle for Azeroth">
+                </button>
+            </h3>
+            <div id="collapseBFA" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExpansions">
+                <div class="accordion-body">
+                    <div class="vidcontainer">
+                        <iframe src="https://www.youtube.com/embed/jSJr3dXZfcg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Shadowlands-->
+        <div class="accordion-item">
+            <h3 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseShadowlands" aria-expanded="false" aria-controls="collapseShadowlands">
+                    <img class="logo" src="{{url_for('static',filename = 'images/Shadowlands_logo.webp')}}" alt="World of Warcraft: Shadowlands">
+                </button>
+            </h3>
+            <div id="collapseShadowlands" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExpansions">
+                <div class="accordion-body">
+                    <div class="vidcontainer">
+                        <iframe src="https://www.youtube.com/embed/s4gBChg6AII" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Dragonflight-->
+        <div class="accordion-item">
+            <h3 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDragonflight" aria-expanded="false" aria-controls="collapseDragonflight">
+                    <img class="logo" src="{{url_for('static',filename = 'images/Dragonflight_logo.webp')}}" alt="World of Warcraft: Dragonflight"> 
+                </button>
+            </h3>
+            <div id="collapseDragonflight" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExpansions">
+                <div class="accordion-body">
+                    <div class="vidcontainer">
+                        <iframe src="https://www.youtube.com/embed/3ZtedjN1JXY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+</body>
+{% endblock content%}

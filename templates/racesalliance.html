@@ -1,0 +1,185 @@
+{% extends 'base.html' %}
+
+{% block content%}
+<body class="alliance">
+    <img class="logo-faction" src="{{url_for('static',filename = 'images/alliance logo.png')}}" alt="Alliance Logo">
+    <h1>Alliance: Races</h1>
+<div>
+    <div class="accordion" id="accordionExpansions">
+        <!--Human-->
+        <div class="accordion-item">
+            <h3 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHuman" aria-expanded="false" aria-controls="collapseHuman">
+                <img class="logo-race" src="{{url_for('static',filename = 'images/human.png')}}" alt="World of Warcraft">
+                <h3>Human</h3>
+            </button>
+            </h3>
+            <div id="collapseHuman" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExpansions">
+            <div class="accordion-body">
+                <p class="alliance">Humans are a young race, and thus highly versatile, mastering the arts of combat, craftsmanship, and magic with stunning efficiency. The humans' valor and optimism have led them to build some of the world's greatest kingdoms. In this troubled era, after generations of conflict, humanity seeks to rekindle its former glory and forge a shining new future.</p>
+            </div>
+            </div>
+        </div>
+    <!--Dwarf-->
+    <div class="accordion-item">
+        <h3 class="accordion-header" id="headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDwarf" aria-expanded="false" aria-controls="collapseDwarf">
+            <img class="logo-race" src="{{url_for('static',filename = 'images/dwarf.png')}}" alt="World of Warcraft">
+            <h3>Dwarf</h3>
+        </button>
+        </h3>
+        <div id="collapseDwarf" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExpansions">
+        <div class="accordion-body">
+            <p>In ages past the dwarves cared only for riches taken from the earth's depths. Then records surfaced of a god-like race said to have given the dwarves life... and an enchanted birthright. Driven to learn more, the dwarves devoted themselves to the pursuit of lost artifacts and ancient knowledge. Today dwarven archaeologists are scattered throughout the globe.</p>
+        </div>
+        </div>
+    </div>
+    <!--Night Elf-->
+    <div class="accordion-item">
+        <h3 class="accordion-header" id="headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNElf" aria-expanded="false" aria-controls="collapseNElf">
+            <img class="logo-race" src="{{url_for('static',filename = 'images/night elf.png')}}" alt="World of Warcraft">
+            <h3>Night Elf</h3>
+        </button>
+        </h3>
+        <div id="collapseNElf" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExpansions">
+        <div class="accordion-body">
+            <p>Ten thousand years ago, the night elves founded a vast empire, but their reckless use of primal magic brought them to ruin. In grief, they withdrew to the forests and remained isolated there until the return of their ancient enemy, the Burning Legion. With no other choice, the night elves emerged at last from their seclusion to fight for their place in the new world.</p>
+        </div>
+        </div>
+    </div>
+    <!--Gnome-->
+    <div class="accordion-item">
+        <h3 class="accordion-header" id="headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGnome" aria-expanded="false" aria-controls="collapseGnome">
+            <img class="logo-race" src="{{url_for('static',filename = 'images/gnome.png')}}" alt="World of Warcraft">
+            <h3>Gnome</h3>
+        </button>
+        </h3>
+        <div id="collapseGnome" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExpansions">
+        <div class="accordion-body">
+            <p>Though small in stature, the gnomes of Khaz Modan have used their great intellect to secure a place in history. Indeed, their subterranean kingdom, Gnomeregan, was once a marvel of steam-driven technology. Even so, due to a massive trogg invasion, the city was lost. Now its builders are vagabonds in the dwarven lands, aiding their allies as best they can.ssssssssssss</p>
+        </div>
+        </div>
+    </div>
+    <!--Draenei-->
+    <div class="accordion-item">
+        <h3 class="accordion-header" id="headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDraenei" aria-expanded="false" aria-controls="collapseDraenei">
+            <img class="logo-race" src="{{url_for('static',filename = 'images/draenei.png')}}" alt="World of Warcraft">
+            <h3>Draenei</h3>
+        </button>
+        </h3>
+        <div id="collapseDraenei" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExpansions">
+        <div class="accordion-body">
+            <p>Driven from their home world of Argus, the honorable draenei fled the Burning Legion for eons before finding a remote planet to settle on. They shared this world with the shamanistic orcs and named it Draenor. In time the Legion corrupted the orcs, who waged war and nearly exterminated the peaceful draenei. A lucky few fled to Azeroth, where they now seek allies in their battle against the Burning Legion.</p>
+        </div>
+        </div>
+    </div>
+    <!--Worgen-->
+    <div class="accordion-item">
+        <h3 class="accordion-header" id="headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWorgen" aria-expanded="false" aria-controls="collapseWorgen">
+            <img class="logo-race" src="{{url_for('static',filename = 'images/worgen.png')}}" alt="World of Warcraft">
+            <h3>Worgen</h3>
+        </button>
+        </h3>
+        <div id="collapseWorgen" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExpansions">
+        <div class="accordion-body">
+            <p>The worgen were first unleashed upon the Eastern Kingdoms by Archmage Arugal during the Third War. Primarily used as a weapon against the Scourge, the beasts soon proved to be a burden greater than the humans of Lordaeron could bear. A mysterious curse began to spread among those who fought alongside the wolf-men, causing them to become worgen themselves.
+            <br><br>
+            The curse rapidly spread as it reached Gilneas, trapping its inhabitants behind the very walls built to protect them. The survivors of the curse now seek to find a new fate for their people -- their destiny unwritten...</p>
+        </div>
+        </div>
+    </div>
+    <!--Void Elf-->
+    <div class="accordion-item">
+        <h3 class="accordion-header" id="headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseVelf" aria-expanded="false" aria-controls="collapseVelf">
+            <img class="logo-race" src="{{url_for('static',filename = 'images/void elf.png')}}" alt="World of Warcraft">
+            <h3>Void Elf</h3>
+        </button>
+        </h3>
+        <div id="collapseVelf" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExpansions">
+        <div class="accordion-body">
+            <p>Many have sought to harness the corruptive magic of the Void. Most who tried have fallen into madness. Determined to use this power for the good of Azeroth, Alleria Windrunner is the first mortal to succeed at defying the shadow's whispers. Coming to the aid of a group of her kin who nearly gave in to the darkness, Alleria has vowed to train these Void Elves to control the shadows within them and pledge their newfound powers to the Alliance.</p>
+        </div>
+        </div>
+    </div>
+    <!--Lightforged Draenei-->
+    <div class="accordion-item">
+        <h3 class="accordion-header" id="headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLFDraenei" aria-expanded="false" aria-controls="collapseLFDraenei">
+            <img class="logo-race" src="{{url_for('static',filename = 'images/lightforged draenei.png')}}" alt="World of Warcraft">
+            <h3>Lightforged Draenei</h3>
+        </button>
+        </h3>
+        <div id="collapseLFDraenei" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExpansions">
+        <div class="accordion-body">
+            <p>For untold millennia, the Army of the Light waged war against the Burning Legion throughout the Twisting Nether. The draenei most committed to their long crusade would undergo a ritual to become Lightforged, infusing their bodies with the very essence of the Holy Light. After finally achieving victory on Argus, the Lightforged draenei have undertaken a new mission: protecting Azeroth from rising threats and helping the Alliance push back against Horde aggression.</p>
+        </div>
+        </div>
+    </div>
+    <!--Dark Iron Dwarf-->
+    <div class="accordion-item">
+        <h3 class="accordion-header" id="headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDIDwarf" aria-expanded="false" aria-controls="collapseDIDwarf">
+            <img class="logo-race" src="{{url_for('static',filename = 'images/di dwarf.png')}}" alt="World of Warcraft">
+            <h3>Dark Iron Dwarf</h3>
+        </button>
+        </h3>
+        <div id="collapseDIDwarf" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExpansions">
+        <div class="accordion-body">
+            <p>Known for their fiery tempers and fierce determination, Dark Iron dwarves have a turbulent history with the other clans. A failed coup in Ironforge ignited the War of the Three Hammers, and many of the Dark Iron once fought in the service of Ragnaros the Firelord. Though one faction of the dwarves is pledged to Queen-Regent Moira Thaurissan, others refuse to stand alongside their kin. The Alliance seeks a united Dark Iron clan to harness the power of Azerite and aid their struggle against the Horde.</p>
+        </div>
+        </div>
+    </div>
+    <!--Kul Tirian-->
+    <div class="accordion-item">
+        <h3 class="accordion-header" id="headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseKulTirian" aria-expanded="false" aria-controls="collapseKulTirian">
+            <img class="logo-race" src="{{url_for('static',filename = 'images/kul tirian.png')}}" alt="World of Warcraft">
+            <h3>Kul Tirian</h3>
+        </button>
+        </h3>
+        <div id="collapseKulTirian" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExpansions">
+        <div class="accordion-body">
+            <p>Kul Tiras was founded by fearless explorers who sailed uncharted waters in search of adventure. As a key member of the Alliance of Lordaeron, the Kul Tiran navy dominated the seas of Azeroth with its legendary fleet. But after years of turmoil and hardship, the kingdom grew isolated and vulnerable to dark influences. Thanks to the help of brave heroes, House Proudmoore has been restored and Kul Tiras is poised to fight alongside the valiant Alliance once more.</p>
+        </div>
+        </div>
+    </div>
+    <!--Mechagnome-->
+    <div class="accordion-item">
+        <h3 class="accordion-header" id="headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMechagnome" aria-expanded="false" aria-controls="collapseMechagnome">
+            <img class="logo-race" src="{{url_for('static',filename = 'images/mechagnome.png')}}" alt="World of Warcraft">
+            <h3>Mechagnome</h3>
+        </button>
+        </h3>
+        <div id="collapseMechagnome" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExpansions">
+        <div class="accordion-body">
+            <p>Though they once sought to mechanize themselves completely, the mechagnomes now seek a balance between flesh and steel. Emerging from years of isolation on Mechagon, they bring both ingenuity and aptitude to the Alliance.
+            <br><br>
+            They left Gnomeregan to construct a metal metropolis, Mechagon. However, their once wise and ambitious ruler King Mechagon now ruthlessly rules over them with an iron fist.
+            <br><br>    
+            Work together with the Rustbolt Resistance to overthrow their tyrant so these mechanical mavericks will join the Alliance.</p>
+        </div>
+        </div>
+    </div>
+    <!--Pandaren-->
+    <div class="accordion-item">
+        <h3 class="accordion-header" id="headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePandaren" aria-expanded="false" aria-controls="collapsePandaren">
+            <img class="logo-race" src="{{url_for('static',filename = 'images/pandaren.png')}}" alt="World of Warcraft">
+            <h3>Pandaren</h3>
+        </button>
+        </h3>
+        <div id="collapsePandaren" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExpansions">
+        <div class="accordion-body">
+            <p>Shrouded in fog for ages, the ancient realm of Pandaria has remained unspoiled by war. Now that it has been rediscovered, Pandaren heroes are stepping forward to declare their allegiance toward either the Alliance or the Horde. The most adventurous of the Pandaren come from the Wandering Island, a mysterious land cut off from the rest of Azeroth and Pandaria itself.</p>
+        </div>
+        </div>
+    </div>
+</div>
+</body>
+{% endblock content%}

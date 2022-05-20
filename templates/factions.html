@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block content%}
+
+<!--Page with breif information on the two player factions, with follow on links to respective races pages-->
+
+<body>
+    <h1>Factions</h1>
+    <div class="alliance">
+        <img class="logo-faction" src="{{url_for('static',filename = 'images/alliance logo.png')}}" alt="Alliance Logo">
+        <h2>The Alliance</h2>
+            <p>Humans, night elves, dwarves, gnomes, draenei, and the savage worgen make up the illustrious Alliance. Proud and noble, courageous and wise, these races work together to preserve order in Azeroth. The Alliance is driven by honor and tradition. Its rulers are champions of justice, hope, knowledge, and faith.
+            In a time when chaos and uncertainty reign, the Alliance remains steadfast in its determination to bring light to the darkest corners of the world
+            <br><br><br>
+            <button class="raceButton glow-button" onclick= "location.href='/racesalliance'" class="example-button">See the Alliance Races</button></p>
+    </div>
+    <br><br><br>
+    <div class="horde">
+        <img class="logo-faction" src="{{url_for('static',filename = 'images/horde logo.png')}}" alt="Horde Logo">
+        <h2>The Horde</h2>
+            <p>The Horde is made up of orcs, forsaken, tauren, trolls, blood elves, and most recently, goblins. Misunderstood and cast aside, these diverse and powerful races strive to overcome their differences and unite as one in order to win freedom for their people and prosper in a land that has come to hate them.
+            In the Horde, action and strength are valued above diplomacy, and its leaders earn respect by the blade, wasting no time with politics. The brutality of the Horde's champions is focused giving a voice to those who fight for survival.
+            <br><br><br>
+            <button class="raceButton glow-button " onclick= "location.href='/raceshorde'" class="example-button">See the Horde Races</button></p>
+    </div>
+</body>
+{% endblock content%}
